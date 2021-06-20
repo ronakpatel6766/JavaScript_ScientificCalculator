@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="RonakPatel_JavaScriptCalculator.css">
+	<title>Scientific Calculator</title>
+    <meta charset="UTF-8">
+	<script src="RonakPatel_JavaScriptCalculator.js">
+    </script>
+</head>
+<body>
+<center>
+    <h1>Scientific Calculator</h1>
+    <div id="wrapper">
+        <div class="design"> 
+            <form name="calc"> 
+                <input type="text" name="dis" maxlength="50" size="20">
+            </form>  
+        </div>
+        <div class="btns">
+                <div id=btn-row1>
+                		<input type="button" value="AC"       id="btn" onclick="calc.dis.value = ''" >
+                        <input type="button" value="&#9003;"  id="btn" onclick="deletedigit()" > 
+                        <input type="button" value="&plusmn;" id="btn" onclick="plusorMinus()" >                      
+ 						<input type="button" value="&#960;"   id="btn" onclick="pi()" >
+                        <input type="button" value="%"        id="btn" onclick="percent()"  >
+                </div>
+
+                <div id=btn-row2>
+                        <input type="button" value="&#55;"   id="btn" onclick="seven()" >
+                        <input type="button" value="&#56;"   id="btn" onclick="eight()" >
+                        <input type="button" value="&#57;"   id="btn" onclick="nine()" >
+                        <input type="button" value="exp"     id="btn" onclick="exp()" >
+                        <input type="button" value="&#8785;" id="btn" onclick="division()" >    
+                </div>
+
+                <div id=btn-row3>
+                        <input type="button" value="&#52;"  id="btn" onclick="four()" >
+                        <input type="button" value="&#53;"  id="btn" onclick="five()" >
+                        <input type="button" value="&#54;"  id="btn" onclick="six()" >
+                        <input type="button" value="log"    id="btn" onclick="log()" >
+                        <input type="button" value="&#215;" id="btn" onclick="multiplication()" >      
+                </div>
+
+                 <div id=btn-row4>
+                        <input type="button" value="&#49;"   id="btn" onclick="one()" >
+                        <input type="button" value="&#50;"   id="btn" onclick="two()" >
+                        <input type="button" value="&#51;"   id="btn" onclick="three()" >
+                        <input type="button" value="&#8730;" id="btn" onclick="squareRoot()" >
+                        <input type="button" value="-"       id="btn" onclick="substraction()" >     
+                </div>
+
+                <div id=btn-row5>
+                        <input type="button" value="."       id="btn" onclick="decimalPoint()" >
+                        <input type="button" value="&#48;"   id="btn" onclick="zero()" >
+                        <input type="button" value="&#61;"   id="btn" onclick="ans()" >
+                        <input type="button" value="x&sup2;" id="btn" onclick="square()" > 
+                        <input type="button" value="&#43;"   id="btn" onclick="addition()">      
+                </div>
+
+                <div id=btn-row6>
+                        <input type="button" value="&#40;" id="btn" onclick="leftBracket()" >
+                        <input type="button" value="&#41;" id="btn" onclick="rightBracket()" >
+                        <input type="button" value="sin"   id="btn" onclick="sin()" >
+                        <input type="button" value="cos"   id="btn" onclick="cos()" >
+                        <input type="button" value="tan"   id="btn" onclick="tan()" >
+                </div>
+        </div>
+    </div><br>
+    <footer>&copy; Ronak Jagdishbhai Patel 
+        <p>23rd July 2020</p>
+    </footer>    
+</center>
+</body>
+</html>
